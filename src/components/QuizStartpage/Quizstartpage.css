@@ -1,0 +1,14 @@
+.bref{
+    padding: 15px;
+}
+.bref>ul>li{
+    padding-top: 7px;
+}
+.bref>ul>li>span{
+    color: black;
+    font-weight: 600;
+}
+
+.notes{
+    padding: 15px;
+}

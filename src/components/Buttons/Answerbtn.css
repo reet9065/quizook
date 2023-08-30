@@ -1,0 +1,39 @@
+.answeroptions{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.answeroptions>button{
+    width: 90%;
+    background-color: white;
+    border: 0.5px solid black;
+    font-size: 18px;
+    padding: 12px 0;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.5s;
+    margin: 7px 0;
+}
+
+math{
+    font-size: 24px;
+}
+/* .answeroptions>button:hover:not([disabled]){
+    background-color: black;
+    color: white;
+} */
+.answeroptions>button:disabled{
+    cursor: no-drop;
+}
+
+.answeroptions>.green{
+    background-color: rgb(203, 255, 190);
+    color: rgb(0, 150, 5);
+    border: 0.5px solid rgb(0, 150, 5);
+}
+.answeroptions>.red{
+    background-color: rgb(255, 190, 190);
+    color: rgb(149, 0, 0);
+    border: 0.5px solid rgb(149, 0, 0);
+}

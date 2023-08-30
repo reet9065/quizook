@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./Layouts/Home";
+import Quiz from "./components/Quiz/Quiz";
+import {
+  Route,
+  Routes
+} from 'react-router-dom'
+import HomeLayout from "./Layouts/HomeLayout";
+import About from "./components/About/About";
+import Result from "./components/Resultpage/Result";
+import QuizeLayout from "./Layouts/QuizeLayout";
+import StartQuiz from "./Layouts/StartQuiz";
+import Flotebutton from "./components/Flotebutton/Flotebutton";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <Flotebutton/>
+
+      <Routes>
+        <Route path="/" element={<HomeLayout/>}>
+          <Route index element={<Home/>}/>
+          <Route path="about" element={<About/>}/>
+          <Route path=":qid" element={<StartQuiz/>}/>
+        </Route>
+        <Route path="/start/:qid" element={<QuizeLayout/>}>
+         <Route index element={<Quiz/>}/>
+         <Route path="result" element={<Result/>}/>
+        </Route>
+      </Routes>
     </div>
   );
 }

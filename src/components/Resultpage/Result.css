@@ -1,0 +1,47 @@
+.resultcontainer{
+    width: 100%;
+    max-width: 550px;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+    top: 0;
+}
+
+.circelprogra{
+    margin-top: 15px;
+    width: 50%;
+}
+.RHbtns{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;   
+}
+.RHbtns>.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+.RHbtns>.btns>.ButtonNext{
+    position: relative;
+    bottom: 0;
+}
+
+.scordiscp,.reviws{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.scordiscp>p{
+    font-size: 18px;
+    opacity: 0.5;
+}
+.reviws{
+    width: 95%;
+}

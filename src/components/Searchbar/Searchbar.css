@@ -1,0 +1,42 @@
+.searchbar{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+.searchbarclearicon,
+.searchbarSearchicon,
+.searchbarSearchinput{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    /* border: 0.5px solid red; */
+}
+
+.searchbarSearchicon,
+.searchbarclearicon{
+    width: 15%;
+}
+.searchbarSearchinput{
+    width: 70%;
+}
+
+.searchbarSearchinput>input{
+    width: 100%;
+    font-size: 18px;
+    border: none;
+    color: rgb(90, 90, 90);
+}
+.searchbarSearchinput>input:focus{
+    outline: none;
+}
+.searchbarSearchinput>input::placeholder{
+    color: lightgray;
+}
+.searchbarclearicon{
+    cursor: pointer;
+}

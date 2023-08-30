@@ -1,0 +1,26 @@
+.about{
+    height: 100dvh;
+}
+
+.aboutlogo>img{
+  width: 150px;
+  opacity: 0.5;
+  filter: drop-shadow(5px 5px 5px #6e6e6e);
+}
+
+h1{
+    font-size: 20px;
+    color: rgb(52, 181, 255);
+}
+h2{
+    font-size: 15px;
+    color: rgb(52, 181, 255);
+}
+li,p{
+    font-size: 14px;
+    color: rgb(128, 128, 128);
+}
+
+.containerdiscription{
+    padding: 20px 20px;
+}

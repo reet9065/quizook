@@ -1,0 +1,45 @@
+.Quizcontainer{
+    width: 100%;
+    max-width: 550px;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    background-color: white;
+    bottom: 0;
+    top: 0;
+}
+
+.exitebuttonsection{
+    display: flex;
+    width:95%;
+    justify-content: space-between;
+    padding: 5px;
+}
+.exitebuttonsection>.exit>a{
+    font-size: 22px;
+    font-weight: 800;
+
+}
+.exitebuttonsection>.topbtn{
+    background: linear-gradient(135deg, #1e5799 0%,#2989d8 52%,#7db9e8 100%);
+    padding: 10px;
+
+}
+.exitebuttonsection>.topbtn>p{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.question{
+    width: 94%;
+
+}
+.question>h1{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
